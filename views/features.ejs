@@ -1,0 +1,12 @@
+<%include header.ejs%>
+
+<h2>Features I have learned in NodeJS</h2>
+
+<div>
+  <% studied.forEach((ftr) => { %>
+  <img src="<%= ftr.image %>" style="width:200px; height:200px;" />
+  <p><%= ftr.name %></p>
+  <%});%>
+</div>
+
+<%include footer.ejs%>

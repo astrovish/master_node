@@ -1,0 +1,17 @@
+{
+  "name": "mastering_nodejs",
+  "version": "1.0.0",
+  "description": "Learning project for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vishal Singh Tak",
+  "license": "ISC",
+  "dependencies": {
+    "data-parser": "^1.0.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
