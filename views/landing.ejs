@@ -1,18 +1,42 @@
 <%include header.ejs%>
-<form action="/features" method="POST">
-  <h2>Mastering Node JS - A learning project</h2>
-  <h3>Things I have learned in NODE js</h3>
-  <p>
-    Feature name:
+<form action="features" method="POST" enctype="multipart/form-data">
+  <h2 class="blue" style="color:chartreuse;">
+    Mastering Node JS - A learning project
+  </h2>
+  <h3 style="color:grey;">
+    Things I have learned in NODEJS<br />
+    <!-- <%= currDateTime %> -->
+  </h3>
+  <div class="form-group">
+    <label for="featureName">Feature name</label>
     <input
       type="text"
+      class="form-control"
+      id="featureName"
       name="featureName"
       placeholder="Enter the feature you have learned in Node"
     />
-  </p>
-  <p>
-    Related picture: <input type="text" name="relatedImage" placeholder="URL" />
-  </p>
+  </div>
+  <div class="form-group">
+    <label for="relatedImage">Related picture</label>
+    <input
+      type="text"
+      class="form-control"
+      id="relatedImage"
+      name="relatedImage"
+      placeholder="URL"
+    />
+  </div>
+  <div class="form-group">
+    <label for="uploadDocFile">Upload Doc File</label>
+    <input
+      type="file"
+      class="form-control-file"
+      id="uploadDocFile"
+      name="uploadDocFile"
+    />
+  </div>
+
   <button>Add to my learnings</button>
 </form>
 <%include footer.ejs%>
